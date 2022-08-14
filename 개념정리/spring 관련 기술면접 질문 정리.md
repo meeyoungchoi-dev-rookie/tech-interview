@@ -91,3 +91,17 @@
 5. URI 경로에는 소문자가 적합하다
 6. 파일확장자는 URI 에 포함하지 않는다
 
+### spring을 사용하는 이유
++ 스프링의 핵심 컨켑이 객체지향이다
++ 좋은 객체지향 애플리케이션을 개발할 수 있도록 도와주기 때문이다
+
+
+
+
+### spring boot에서 내장형 톰캣 외 사용할 수 있는 서버 종류
++ Netty :  Async, Event-Driven 방식 네트워크 애플리케이션 프레임워크
+  + Spring Boot 2 부터 Webflux Framework를 사용해서 Reactive Programming을 할 수 있다
+  + 바로 이 Webflux를 사용하면 기본 내장 WAS는 Netty가 된다
++ Jetty : 적은 메모리를 사용하고 가볍고 속도가 빠르다, 하지만 대규모 트래픽에 취약하다
++ Undertow : Blocking과 Non-Blocking API를 모두 안정적으로 제공하는 유연한 고성능 웹서버
+   + 대규모 트래픽으로부터 Tomcat보다 안정적이라고 평가 받는다
